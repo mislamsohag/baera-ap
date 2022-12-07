@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BAERA-AP</title>
@@ -10,45 +12,49 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="px-1 md:px-4 lg:px-12">
+
+    <!-- addres section -->
+    <div class="flex bg-red-400 p-1 items-center justify-between">
+      <span class="material-icons">home</span>
+      <p class="text-xs">E-12/A, Agargoan, Post Box No.-240, Dhaka-1207.</p>
+      <div class="flex space-x-1">
+        <input class="ring rounded-sm" type="text">
+        <span class="material-icons">search</span>
+      </div>
+    </div>
+
     <!-- Header Section -->
-    <header class="flex space-x-4">
-      <div class="flex items-center justify-center space-x-2">
+    <div class="md:flex space-x-2 ">
+      <div class="flex space-x-2 leading-tight">
         <img class="h-24 w-24" src="baera_logo.png" alt="Logo">
         <div class="text-black">
-          <h1 class="text-2xl font-bold">BAERA</h1>
-          <h3 class="">BANGLADESH ATOMIC ENERGY REGULATORY AUTHORITY</h3>
-          <h2>IAEA Safeguards Additional Protocol for Bangladesh</h2>
-          <p class="text-xs">Agargaon, Dhaka, Phone: 0000000000, Email:info.baera, Fax: 0000000000 </p>
+          <h3 class="text-2xl font-bold md:text-2xl lg:text-2xl">BANGLADESH ATOMIC ENERGY REGULATORY AUTHORITY</h3>
+          <h2 class="text-base md:text-lg lg:text-xl">IAEA Safeguards Additional Protocol for Bangladesh</h2>
         </div>
       </div>
-      <div>
-        <ul class="flex items-center justify-center">
-          <a href="">
-            <li>Officer's List</li>
-          </a>
-          <a href="">
-            <li>Important Link</li>
-          </a>
-          <a href="">
-            <li>baera.gov.bd</li>
-          </a>
-        </ul>
+      <div class="flex md:inline-flex lg:inline-flex">
+        <p class="md:text-xs lg:text-sm">Phone: 880-2-8181922</p>
+        <p class="md:text-xs lg:text-sm">Email: info@baera.gov.bd</p>
+        <p class="md:text-xs lg:text-sm">Fax: 880-2-8181015</p>
       </div>
-    </header>
-    <hr style="margin:5px 0;">
+    </div>
+    <hr class="my-2">
 
     <!-- Navbar Section -->
-    <nav class="mainManue">
-      <ul>
-        <a href="">
-          <li id="home">Home</li>
+    <nav class="bg-gray-100 py-2 flex items-center justify-between">
+      <ul class="flex">
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">Home</li>
         </a>
-        <a href="">
-          <li>SR</li>
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">SR</li>
         </a>
-        <a href="">
-          <li>NMAC
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">NMAC
             <!-- <ul class="">
                           <a href="">
                               <li>PIL</li>
@@ -63,41 +69,48 @@
                       </ul> -->
           </li>
         </a>
-        <a href="">
-          <li>DIQ
-
-          </li>
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">DIQ</li>
         </a>
-        <a href="">
-          <li>S.I</li>
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">S.I</li>
         </a>
-        <a href="">
-          <li>Facilility&LoFs</li>
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">Facilility&LoFs</li>
         </a>
-        <a href="">
-          <li>Contact</li>
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">Contact</li>
         </a>
-        <a href="">
-          <li>Media</li>
+        <a class="rounded-lg hover:bg-green-500 mx-1 ring-1 ring-offset-1 shadow-md focus:text-red-600 font-semibold hover:text-white bg-green-300"
+          href="">
+          <li class="py-1 px-2 text-center">Media</li>
         </a>
       </ul>
-      <div class="searchContent">
-
-        <input type="text">
-        <button>Search</button>
-      </div>
     </nav>
 
+    <!-- main Content -->
+    <div class="mainContent">
+      <p>IAEA Safeguards & Additional Protocol for Bangladesh</p>
+    </div>
   </div>
 
-  <div class="mainContent">
-    <p>IAEA Safeguards & Additional Protocol for Bangladesh</p>
-  </div>
-  <footer class="footer">
-    &copy; All rights reserved by Md. Mazharul Islam Sohag-2022.
+  <!-- Footer Section -->
+  <footer class="bg-gray-700 mt-16 text-white">
+    <div class="text-center">
+      <P class="px-1 py-4">&copy; All right reserved-2022; baera.gov.bd</P>
+    </div>
+
   </footer>
-
-
+  <div class="px-1 md:px-4 lg:px-12">
+    <div class="flex p-1 mt-1 space-x-2 items-center justify-end">
+      <p class="text-xs">Design by Md. Mazharul Islam Sohag</P>
+        <img class="h-8 w-8 ring ring-offset-teal-200 rounded-full" src="sohag.jpg" alt="">
+      </div>
+    </div>
 
   <!-- <script src="index.js"></script> -->
 </body>
